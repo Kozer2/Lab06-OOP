@@ -12,7 +12,10 @@ namespace Lab06_OOP.Classes
 
         public override string SkinType { get => "Feathers"; }
 
-        public int HowManyEggsDoTheyLay { get => 3; }
+        public virtual string HowManyEggsDoTheyLay()
+        {
+            return "Birds lay 3 or more!";
+        }
         /*public virtual bool LaysEggs => true;*/
 
         public new string AreTheyWarmOrColdBlooded { get => "Warm Blooded"; }

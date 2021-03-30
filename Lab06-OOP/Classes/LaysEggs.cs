@@ -10,6 +10,9 @@ namespace Lab06_OOP.Classes
     { 
         public virtual bool LaysEggs => true;
 
-        public int HowManyEggsDoTheyLay { get; }
+        public virtual string HowManyEggsDoTheyLay()
+        {
+            return "They lay eggs!";
+        }
     }
 }

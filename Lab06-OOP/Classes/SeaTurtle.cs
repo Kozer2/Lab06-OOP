@@ -12,7 +12,10 @@ namespace Lab06_OOP.Classes
       
         public override bool SleepIsTrue { get => true; }
 
-        public new int HowManyEggsDoTheyLay { get => 110; }
+        public override string HowManyEggsDoTheyLay()
+        {
+            return "Sea Turtles lay 110 at a time!";
+        }
 
         
 

@@ -14,7 +14,10 @@ namespace Lab06_OOP.Classes
 
         public override string SkinType { get => "Scales"; }
 
-        public  int HowManyEggsDoTheyLay { get => 5; }
+        public virtual string HowManyEggsDoTheyLay()
+        {
+            return "Reptiles lay 5!";
+        }
 
         public new string AreTheyWarmOrColdBlooded { get => "Cold Blooded"; }
 

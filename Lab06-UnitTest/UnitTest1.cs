@@ -33,6 +33,19 @@ namespace Lab06_UnitTest
             Assert.False(result);
         }
 
+        [Fact]
+        public void Ostrich_inherits_warm_blooded_from_mammal()
+        {
+            // arrange
+            Ostrich ostrich = new Ostrich();
+
+            // act
+            string result = ostrich.AreTheyWarmOrColdBlooded;
+
+            //assert
+            Assert.Equal("Warm Blooded", result);
+        }
+
 
         [Fact]
         public void Human_wears_clothes()
@@ -59,6 +72,19 @@ namespace Lab06_UnitTest
 
             //assert
             Assert.Equal("Lets go drink water so we are not hungry and save money to buy bitcoin.", result);
+        }
+
+        [Fact]
+        public void Human_inherit_warm_blooded()
+        {
+            // arrange
+            Human human = new Human();
+
+            // act
+            string result = human.AreTheyWarmOrColdBlooded;
+
+            //assert
+            Assert.Equal("Warm Blooded", result);
         }
 
         [Fact]
@@ -102,34 +128,36 @@ namespace Lab06_UnitTest
 
 
         [Fact]
-        public void Sea_turtle_lays_eggs()
+        public void Sea_turtle_lays_eggs_overrides_both_reptile_and_ILaysEggs()
         {
             // arrange
             SeaTurtle seaTurtle = new SeaTurtle();
 
             // act
-            int result = seaTurtle.HowManyEggsDoTheyLay;
+            string result = seaTurtle.HowManyEggsDoTheyLay();
        
 
             //assert
-            Assert.Equal(110, result);
+            Assert.Equal("Sea Turtles lay 110 at a time!", result);
 
         }
-        
+
 
 
         [Fact]
-        public void Viper_gives_live_birth_lays_eggs_false()
+        public void Viper_gives_live_birth_lays_eggs_override()
         {
             // arrange
             Viper viper = new Viper();
 
             // act
-            string result = viper.IsColdBlooded();
+            string result = viper.HowManyEggsDoTheyLay();
 
             //assert
-            Assert.Equal("Where's the sun? I am cold!", result);
+            Assert.Equal("Vipers give live birth!", result);
         }
+
+
 
     }
 }
