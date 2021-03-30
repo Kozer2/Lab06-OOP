@@ -34,7 +34,7 @@ namespace Lab06_UnitTest
         }
 
         [Fact]
-        public void Ostrich_inherits_warm_blooded_from_mammal()
+        public void Ostrich_inherits_warm_blooded_from_mammal_using_interface()
         {
             // arrange
             Ostrich ostrich = new Ostrich();
@@ -75,7 +75,7 @@ namespace Lab06_UnitTest
         }
 
         [Fact]
-        public void Human_inherit_warm_blooded()
+        public void Human_inherit_warm_blooded_from_mammal_using_interface()
         {
             // arrange
             Human human = new Human();
@@ -157,6 +157,18 @@ namespace Lab06_UnitTest
             Assert.Equal("Vipers give live birth!", result);
         }
 
+        [Fact]
+        public void Viper_is_animal_inherits_eat_from_animal_class()
+        {
+            // arrange
+            Viper viper = new Viper();
+
+            // act
+            string result = viper.Eat();
+
+            //assert
+            Assert.Equal("Eat the Food!", result);
+        }
 
 
     }
