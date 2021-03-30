@@ -14,6 +14,8 @@ namespace Lab06_OOP.Classes
         }
 
         public override bool SleepIsTrue { get => true; }
+
+
         public string WearsClothes()
         {
             return "Looking Pretty Fly";

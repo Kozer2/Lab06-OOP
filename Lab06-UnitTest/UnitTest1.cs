@@ -108,11 +108,14 @@ namespace Lab06_UnitTest
             SeaTurtle seaTurtle = new SeaTurtle();
 
             // act
-            bool result = seaTurtle.LaysEggs;
+            int result = seaTurtle.HowManyEggsDoTheyLay;
+       
 
             //assert
-            Assert.True(result);
+            Assert.Equal(110, result);
+
         }
+        
 
 
         [Fact]

@@ -11,7 +11,11 @@ namespace Lab06_OOP.Classes
         public override string SkinType { get => "Shell"; }
       
         public override bool SleepIsTrue { get => true; }
+
+        public new int HowManyEggsDoTheyLay { get => 110; }
+
         
+
 
         public bool CanSwim => true;
 
