@@ -8,8 +8,13 @@ namespace Lab06_OOP.Classes
 {
     public class Viper : Reptile
     {
-        public override bool LaysEggs => false;
+        public override string HowManyEggsDoTheyLay()
+        {
+            return "Vipers give live birth!";
+        }
         public override bool SleepIsTrue { get => true; }
+
+     
     }
 
    

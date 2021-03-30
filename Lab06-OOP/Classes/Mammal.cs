@@ -10,9 +10,11 @@ namespace Lab06_OOP.Classes
     {
         public virtual bool LiveBirth => true;
 
-        public virtual bool WarmBlooded => true;
+        public new string AreTheyWarmOrColdBlooded { get => "Warm Blooded"; }
 
         public override string SkinType { get => "Hairy"; }
+
+
 
         public virtual string CanTalk()
         {
