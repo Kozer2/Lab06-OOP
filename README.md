@@ -1,5 +1,5 @@
 # Lab06-OOP
-[Link to code]
+[Link to code](https://github.com/Kozer2/Lab06-OOP/tree/main/Lab06-OOP/Classes) 
 
 This project was designed to have me create multiple classes and use inheritance to inherit and overrider with different concrete animals. 
 It is a zoo of animals. 
@@ -56,7 +56,7 @@ This was an Object Oriented Programming project. The OOP principles used were:
 
 # Lab 07
 
-[Link to code]
+[Link to Tests](https://github.com/Kozer2/Lab06-OOP/blob/main/Lab06-UnitTest/UnitTest1.cs)
 
 ### Instructions  
 Create a minimum of 2 interfaces.
